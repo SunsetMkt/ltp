@@ -143,7 +143,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [ linux, linux-cross, windows, macos, sdist ]
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v4.1.7
       - name: Publish to PyPI
         uses: PyO3/maturin-action@v1
         env:
